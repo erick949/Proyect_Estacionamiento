@@ -93,7 +93,7 @@ function Form({ onAddActivity }: FormProps) {
 function ActivityList({ activities, onDeleteActivity }: ActivityListProps) {
   // Función para obtener nombre de categoría a partir del id
   const getCategoryName = (categoryId: string) => {
-    const cat = categories.find(c => c.id === categoryId)
+    const cat = categories.find(c => c.id === Number(category))
     return cat ? cat.name : 'Sin categoría'
   }
 
